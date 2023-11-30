@@ -74,18 +74,18 @@ def main():
     """
     This function runs on the program
     """
-    musician1 = Musician("Ivo Bobul", 20000, 70)
-    musician2 = Musician("Oleg Vinnik", 40000, 50)
-    musician3 = Musician("Pavlo Zibrov", 15000, 66)
+    musician_ivo_bobul = Musician("Ivo Bobul", 20000, 70)
+    musician_oleg_vinnik = Musician("Oleg Vinnik", 40000, 50)
+    musician_pavlo_zibrov = Musician("Pavlo Zibrov", 15000, 66)
 
-    list_of_musicians = [musician1, musician2]
+    list_of_musicians = [musician_ivo_bobul, musician_oleg_vinnik]
 
     festival = MusicFestival(50000, list_of_musicians)
 
-    festival.add_musician(musician3)
+    festival.add_musician(musician_pavlo_zibrov)
 
-    festival.remove_musician(musician2)
+    festival.remove_musician(musician_oleg_vinnik)
 
-    print_info(musician1, musician2, musician3, festival)
+    print_info(musician_ivo_bobul, musician_oleg_vinnik, musician_pavlo_zibrov, festival)
 
 main()
