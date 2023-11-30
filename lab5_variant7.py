@@ -18,7 +18,8 @@ class Musician:
 
 class MusicFestival:
     """
-    This class creates an object called music festival which would include list of musicians in it
+    This class creates an object called music festival,
+    which would include list of musicians and calculate total fee for them.
     """
     def __init__(self, list_of_musicians: list, max_budget: int = 0):
         self.max_budget = max_budget
